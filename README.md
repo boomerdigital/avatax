@@ -1,5 +1,5 @@
 # Avatax
-[![CircleCI](https://circleci.com/gh/skukx/avatax.svg?style=shield)](https://circleci.com/gh/skukx/avatax)
+[![CircleCI](https://circleci.com/gh/boomerdigital/avatax.svg?style=shield)](https://circleci.com/gh/boomerdigital/avatax)
 
 This gem is a work in progress for providing a ruby client for Avatax REST api v2.
 See: http://developer.avalara.com/avatax/api-reference/tax/v2/
@@ -9,7 +9,7 @@ See: http://developer.avalara.com/avatax/api-reference/tax/v2/
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'avatax-ruby', git: 'git@github.com:skukx/avatax.git', require: 'avatax'
+gem 'avatax-ruby', git: 'git@github.com:boomerdigital/avatax.git', require: 'avatax'
 ```
 
 Or
