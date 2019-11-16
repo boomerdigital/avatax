@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sandbox-rest.avatax.com/api/v2/definitions/crossborder/UK/620342
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.0
+      Authorization:
+      - "<BASIC_AUTH>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 13 Nov 2019 23:50:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '552'
+      Connection:
+      - keep-alive
+      X-Content-Type-Options:
+      - nosniff
+      Serverduration:
+      - '00:00:00.0195604'
+      Databasecalls:
+      - '0'
+      Databaseduration:
+      - '00:00:00'
+      Serviceduration:
+      - '00:00:00'
+    body:
+      encoding: UTF-8
+      string: '{"@recordsetCount":3,"value":[{"hsCode":"62034211","id":1503985,"parentHsCodeId":1503983,"description":"-
+        - - Trousers and breeches","system":"Integrated Tariff of the European Union","effDate":"2018-01-01"},{"hsCode":"62034251","id":1503995,"parentHsCodeId":1503983,"description":"-
+        - - Bib and brace overalls","system":"Integrated Tariff of the European Union","effDate":"2018-01-01"},{"hsCode":"6203429000","id":1504000,"parentHsCodeId":1503983,"description":"-
+        - - Other","system":"Integrated Tariff of the European Union","effDate":"2018-01-01"}]}'
+    http_version: 
+  recorded_at: Wed, 13 Nov 2019 23:50:37 GMT
+recorded_with: VCR 5.0.0
