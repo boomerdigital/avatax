@@ -1,3 +1,9 @@
+require 'faraday'
+require 'faraday/detailed_logger'
+require 'logger'
+
+
+
 module Avatax
   class Client
     @namespaces = []
@@ -58,12 +64,12 @@ module Avatax
           @configuration.username,
           @configuration.password
         )
-
+        my_logger = Logger.new(STDOUT)
+        my_logger.level = Logger::DEBUG
         conn.headers = @configuration.headers
 
         conn.response :json
-        conn.response :logger
-
+        conn.response :detailed_logger, Rails.logger # <-- sets a custom logger.
         conn.adapter  Faraday.default_adapter
       end
 
